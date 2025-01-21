@@ -1,8 +1,8 @@
-# Операции со строками
-greeting = "Hello"
-greeting += " World!"  
-greeting = greeting.lower() # Метод .lower() преобразует все символы строки в нижний регистр. "Hello World!" превращается в "hello world!".
+# Проверка високосного года
 
-index_of_o = greeting.index('o')  # Метод .index() возвращает индекс первого вхождения заданного символа в строке. счет с нуля
-print(greeting)      
-print(index_of_o)    
+year = int(input("Enter a year: "))
+
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
+    print(f"{year} is a leap year.")  
+else:
+    print(f"{year} is not a leap year.")   

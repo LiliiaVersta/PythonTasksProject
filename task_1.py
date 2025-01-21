@@ -1,10 +1,10 @@
-# Работа с целыми числами
-num = 15
+# Проверка диапазона числа
 
-num += 5  # num = 15 + 5 = 20
-num -= 3  # num = 20 - 3 = 17
-num *= 4  #  num = 17 * 4 = 68
-num //= 2  #  num = 68 // 2 = 34
+number = int(input("Enter a number: "))  
 
-print(num)  # 34
-
+if number < 10:
+    print("The number is less than 10.")  
+elif 10 <= number <= 20:
+    print("The number is between 10 and 20.")  
+else:
+    print("The number is greater than 20.")  
