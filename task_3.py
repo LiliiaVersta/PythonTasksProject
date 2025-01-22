@@ -12,6 +12,6 @@ print(not b) # True
 
 print(a and c) or c # True
 
-print a and (b or c) # True
+print (a and (b or c)) # True
 
 
