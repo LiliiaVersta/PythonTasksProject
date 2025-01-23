@@ -1,10 +1,10 @@
-# Проверка диапазона числа
+# Случайный выбор лидера команды
 
-number = int(input("Enter a number: "))  
+import random  # Модуль random предоставляет функции для работы с случайными числами и выбором элементов из последовательностей.
 
-if number < 10:
-    print("The number is less than 10.")  
-elif 10 <= number <= 20:
-    print("The number is between 10 and 20.")  
-else:
-    print("The number is greater than 20.")  
+participants = ['Alice', 'Bob', 'Charlie', 'Diana']
+
+selected_leader = random.choice(participants) # Функция random.choice() выбирает случайный элемент из списка 
+
+print(f"Participants: {participants}")
+print(f"Selected leader: {selected_leader}")  

@@ -1,17 +1,23 @@
-#  Практика с логическими операторами
+#  Операции со списками
+ 
+numbers = [5, 12, 7, 9, 20, 15]
+print(f"Original list: {numbers}")
 
-a = True
-b = False
-c = True
+#append() добавляет новое число в конец списка
+numbers.append(25)
+print(f"After adding 25: {numbers}")
 
-print(a and b) # False
+#remove() удаляет первое вхождение указанного числа в списке
+numbers.remove(7)
+print(f"After removing 7: {numbers}")
 
-print(a or b) # True
+#sort() изменяет исходный список, упорядочивая его по возрастанию
+numbers.sort()
+print(f"Sorted list: {numbers}")
 
-print(not b) # True
-
-print(a and c) or c # True
-
-print (a and (b or c)) # True
-
+# находим наибольшее и наименьшее числа
+largest = max(numbers)
+smallest = min(numbers)
+print(f"Largest number: {largest}")
+print(f"Smallest number: {smallest}")
 

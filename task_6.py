@@ -1,11 +1,11 @@
-# Вложенный тернарный оператор для описания температуры
+# Распаковка кортежей с данными разных типов
 
-temp = int(input("Enter the temperature: "))
+data = (42, 3.14, "Hello", True)
 
-result = (
-    "Cold" if temp < 15
-    else "Warm" if 15 <= temp <= 30
-    else "Hot"
-)
+integer_value, float_value, string_value, boolean_value = data
 
-print(result)
+# Функция type() возвращает тип переменной
+print(f"Integer: {integer_value} (Type: {type(integer_value)})") 
+print(f"Float: {float_value} (Type: {type(float_value)})")
+print(f"String: {string_value} (Type: {type(string_value)})")
+print(f"Boolean: {boolean_value} (Type: {type(boolean_value)})")
