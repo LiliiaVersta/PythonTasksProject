@@ -1,8 +1,8 @@
-# Преобразование типов
-str_value = "1234"
+# Проверка, является ли число чётным или нечётным
 
-int_value = int(str_value) # целое число
+number = int(input("Enter a number: "))
 
-float_value = float(str_value) # число с плавающей точкой
-print(float_value)
-print(int_value)
+# Используем тернарный оператор для проверки чётности
+result = "Even" if number % 2 == 0 else "Odd"
+
+print(result)

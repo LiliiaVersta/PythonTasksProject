@@ -1,10 +1,11 @@
-# Работа с комплексными числами
-z = 2 + 3j
+# Вложенный тернарный оператор для описания температуры
 
-real_part = z.real  # Действительная часть
-imaginary_part = z.imag  # Мнимая часть 
-modulus = abs(z)  # Модуль комплексного числа 
+temp = int(input("Enter the temperature: "))
 
-print(f"Real part: {real_part}")       
-print(f"Imaginary part: {imaginary_part}")  
-print(f"Modulus: {modulus}") 
+result = (
+    "Cold" if temp < 15
+    else "Warm" if 15 <= temp <= 30
+    else "Hot"
+)
+
+print(result)

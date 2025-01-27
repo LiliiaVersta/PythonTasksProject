@@ -1,11 +1,17 @@
-#  Логические операции
-is_logged_in = True
-has_permission = False
+#  Практика с логическими операторами
 
-result_and = is_logged_in and has_permission  
-result_or = is_logged_in or has_permission    
-result_not = not has_permission              
+a = True
+b = False
+c = True
 
-print(result_and)  
-print(result_or)   
-print(result_not)  
+print(a and b) # False
+
+print(a or b) # True
+
+print(not b) # True
+
+print(a and c) or c # True
+
+print (a and (b or c)) # True
+
+
