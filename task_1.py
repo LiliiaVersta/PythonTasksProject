@@ -1,10 +1,10 @@
-# Случайный выбор лидера команды
+# Цикл по списку с изменением элементов
 
-import random  # Модуль random предоставляет функции для работы с случайными числами и выбором элементов из последовательностей.
+numbers = [3, 7, 1, 9, 4]
 
-participants = ['Alice', 'Bob', 'Charlie', 'Diana']
-
-selected_leader = random.choice(participants) # Функция random.choice() выбирает случайный элемент из списка 
-
-print(f"Participants: {participants}")
-print(f"Selected leader: {selected_leader}")  
+# Функция enumerate возвращает индекс и значение каждого элемента списка
+for index, value in enumerate(numbers):
+    numbers[index] = value * 3  # Умножаем число на 3
+    if numbers[index] > 15:    # Если результат больше 15
+        numbers[index] = 'Too large'  # Заменяем на строку
+print(numbers)  

@@ -1,11 +1,17 @@
-# Распаковка кортежей с данными разных типов
+# Изменение значений в вложенном списке
 
-data = (42, 3.14, "Hello", True)
+grid = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
-integer_value, float_value, string_value, boolean_value = data
+for row_index, row in enumerate(grid): # Внешний цикл for row in grid перебирает строки матрицы
+    for col_index, value in enumerate(row): # Внутренний цикл for value in row обрабатывает элементы в каждой строке
+        if value % 2 == 0:  # Если значение чётное
+            grid[row_index][col_index] = value * 2
+        else:  # Если значение нечётное
+            grid[row_index][col_index] = 0
 
-# Функция type() возвращает тип переменной
-print(f"Integer: {integer_value} (Type: {type(integer_value)})") 
-print(f"Float: {float_value} (Type: {type(float_value)})")
-print(f"String: {string_value} (Type: {type(string_value)})")
-print(f"Boolean: {boolean_value} (Type: {type(boolean_value)})")
+for row in grid:
+    print(row)
