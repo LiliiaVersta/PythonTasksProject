@@ -1,11 +1,9 @@
 class Car:
-    def __init__(self, make, model, year):
-        self.make = make      
-        self.model = model    
-        self.year = year      
-
-my_car = Car("Toyota", "Camry", 2020)
-
-print("Make:", my_car.make)
-print("Model:", my_car.model)
-print("Year:", my_car.year)
+    make = ""
+    model = ""
+    year = 0
+toyota = Car()
+toyota.make = "Toyota"
+toyota.model = "Camry"
+toyota.year = 2020
+print(f"Make: {toyota.make} \nModel: {toyota.model} \nYear: {toyota.year}")
